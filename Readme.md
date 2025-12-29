@@ -16,7 +16,7 @@
 &nbsp;
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-green.svg?style=for-the-badge" alt="License"></a>
 &nbsp;
-<a href="https://huggingface.co/collections/tencent/WeDLM"><img src="https://img.shields.io/badge/🤗%20HuggingFace-Models-yellow?style=for-the-badge" alt="Model Weights"></a>
+<a href="https://huggingface.co/collections/tencent/wedlm"><img src="https://img.shields.io/badge/🤗%20HuggingFace-Models-yellow?style=for-the-badge" alt="Model Weights"></a>
 </p>
 
 <br>
