@@ -48,6 +48,7 @@ dependencies = [
     "tqdm>=4.60.0",
     "safetensors>=0.4.0",
     "flask>=2.0.0",
+    "protobuf>=6.33.2",
 ]
 
 [project.optional-dependencies]
