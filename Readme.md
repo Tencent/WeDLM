@@ -10,7 +10,7 @@
 
 <!-- Badges with better spacing -->
 <p>
-<a href="paper/wedlm.pdf"><img src="https://img.shields.io/badge/📄%20Paper-PDF-b31b1b.svg?style=for-the-badge" alt="Paper"></a>
+<a href="https://arxiv.org/abs/2512.22737"><img src="https://img.shields.io/badge/📄%20Paper-arXiv-b31b1b.svg?style=for-the-badge" alt="Paper"></a>
 &nbsp;
 <a href="https://wedlm.github.io"><img src="https://img.shields.io/badge/🌐%20Project-Page-blue?style=for-the-badge" alt="Project Page"></a>
 &nbsp;
@@ -244,7 +244,7 @@ out = model(**inputs)
 WeDLM introduces **Topological Reordering** to perform parallel mask recovery under standard causal attention, combined with **Streaming Parallel Decoding** for continuous prefix commitment.
 
 *   👉 **[Project Page](https://wedlm.github.io)** — Interactive explanations and visualizations
-*   👉 **[Paper](paper/wedlm.pdf)** — Technical details and full experimental results
+*   👉 **[Paper](https://arxiv.org/abs/2512.22737)** — Technical details and full experimental results
 
 ---
 
@@ -256,6 +256,7 @@ If you find WeDLM useful for your research, please cite:
 @article{liu2025wedlm,
   title={WeDLM: Reconciling Diffusion Language Models with Standard Causal Attention for Fast Inference},
   author={Liu, Aiwei and He, Minghua and Zeng, Shaoxun and Zhang, Linhao and Wu, Chuhan and Jia, Wei and Liu, Yuan and Yu, Yang and Zhou, Xiao and Zhou, Jie},
+  journal={arXiv preprint arXiv:2512.22737},
   year={2025}
 }
 ```
