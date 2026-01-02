@@ -1,0 +1,60 @@
+# Model
+model_path: "tencent/WeDLM-8B-Base"
+trust_remote_code: true
+
+# Data
+train_data: "data/alpaca_cleaned_sft.jsonl"
+max_seq_length: 2048
+
+# WeDLM
+block_size: 32
+mask_per_block: true
+loss_weighting_scheme: "weighted" 
+mask_eps: 1.0e-8
+num_learnable_im_end: 0
+
+# AR loss
+enable_ar_loss: true
+ar_loss_weight: 1.0
+
+# Attention: "magi" or "dense"
+attention_backend: "dense"
+
+# Training
+output_dir: "outputs/wedlm-sft-final1"
+num_train_epochs: 1
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 1
+learning_rate: 3.0e-6
+lr_scheduler_type: "cosine"
+warmup_ratio: 0.1
+weight_decay: 0.01
+max_grad_norm: 1.0
+
+# Cache
+rebuild_cache: false
+
+# DeepSpeed
+use_deepspeed: true
+deepspeed_zero_stage: 2
+deepspeed_offload_optimizer: true
+deepspeed_offload_param: false
+
+# Logging
+logging_steps: 10
+save_steps: 500
+save_total_limit: 3
+
+# Device & Seed
+bf16: true
+seed: 42
+
+# WandB (optional)
+# use_wandb: true
+# wandb_project: "wedlm-sft"
+# wandb_team: null
+# wandb_group: null
+# For private deployment:
+# wandb_host: "http://wandb.dev3.woa.com:8080"
+# wandb_key: "local-xxx"
+

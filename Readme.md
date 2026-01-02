@@ -21,6 +21,7 @@
 
 <br>
 
+
 <!-- Highlight Box -->
 <table>
 <tr>
@@ -40,7 +41,23 @@
 
 <br>
 
+<!-- What's New -->
+<details open>
+<summary><b>📢 What's New</b></summary>
+<br>
+
+| Date | Update |
+|:-----|:-------|
+| **2026-01-02** | 🎓 Released fine-tuning framework with support for dense & MagiAttention backends |
+| **2025-12-29** | 🚀 Initial release: WeDLM-7B/8B models, inference engine, evaluation suite |
+
+</details>
+
+<br>
+
+
 </div>
+
 
 ---
 
@@ -263,6 +280,27 @@ bash evaluation/evaluation_base.sh \
 ```
 
 *See `evaluation/demo.sh` for all benchmark commands.*
+
+### Fine-tuning
+
+Fine-tune WeDLM on your own data using our training framework:
+
+```bash
+cd finetune
+
+# Download sample dataset (Alpaca)
+python scripts/download_alpaca_sft.py
+
+# Launch training (multi-GPU with DeepSpeed)
+accelerate launch --multi_gpu --num_processes 4 --mixed_precision bf16 \
+    train.py --config configs/example.yaml
+```
+
+**Attention Backends:**
+- `dense` — PyTorch native SDPA (works out-of-the-box)
+- `magi` — [MagiAttention](https://github.com/SandAI-org/MagiAttention) for optimized training (requires separate installation)
+
+*See `finetune/README.md` for detailed configuration and data format.*
 
 ### HuggingFace Compatibility
 
