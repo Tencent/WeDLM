@@ -21,7 +21,7 @@ ar_loss_weight: 1.0
 attention_backend: "dense"
 
 # Training
-output_dir: "outputs/wedlm-sft-final1"
+output_dir: "outputs/wedlm-sft"
 num_train_epochs: 1
 per_device_train_batch_size: 1
 gradient_accumulation_steps: 1
@@ -55,6 +55,6 @@ seed: 42
 # wandb_team: null
 # wandb_group: null
 # For private deployment:
-# wandb_host: "http://wandb.dev3.woa.com:8080"
-# wandb_key: "local-xxx"
+# wandb_host: ""
+# wandb_key: ""
 
